@@ -20,8 +20,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [URL](https://www.frontendmentor.io/solutions/first-time-using-js-interactivereactingcomponent-6UYlkKnseA)
+- Live Site URL: [URL](https://unl00ky.github.io/interactive-rating-challenge/)
 
 ## My process
 
