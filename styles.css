@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%, 0.1);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    background: linear-gradient(var(--Dark-Blue), var(--Very-Dark-Blue));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 350px;
+    margin: auto;
+}
+@media screen and (min-width: 800px){
+    main {
+        max-width: 375px;
+    }
+}
+
+.star{
+    background-color: var(--Light-Grey);
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+.first-card h1 {
+    color: var(--White);
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.first-card p {
+    color: var(--Medium-Grey);
+    font-size: 0.9rem;
+}
+.ratings {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio-btn {
+    display: none;
+    transition: all 500ms ease;
+}
+.radio-btn:checked+label {
+    color: white;
+    background-color: var(--Orange);
+}
+
+.radio {
+    color: var(--Medium-Grey);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--Light-Grey);
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+.radio:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--Medium-Grey);
+}
+.submit-btn {
+    width: 100%;
+    background-color: var(--Orange);
+    color: white;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3rem;
+    transition: all 500ms ease;
+    letter-spacing: 3px;
+}
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--Orange);
+}
+
+.second-card {
+    text-align: center;
+}
+.second-card h2 {
+    width: 200px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    background-color: var(--Light-Grey);
+    color: var(--Orange);
+    font-weight: 400;
+    padding: 5px 0;
+    border-radius: 1rem;
+}
+.second-card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.second-card p {
+    color: var(--Medium-Grey);
+    font-size: 0.9rem;
+}
+
+/* .first-card {
+    display: none;
+} */
+.second-card {
+    display: none;
+}
+
